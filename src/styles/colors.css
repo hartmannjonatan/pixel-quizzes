@@ -1,0 +1,92 @@
+:root {
+    --dark: #3C3A36;
+    --dark-gray: #78746D;
+    --gray: #BEBAB3;
+    --light-gray: #FFF5EE;
+    --white: #FFFFFF;
+    --primary: #82327E;
+    --secondary: #65AAEA;
+    --success: #5BA092;
+    --error: #EF4949;
+    --warning: #F2A03F;
+}
+
+.color-dark {
+    color: var(--dark);
+}
+
+.color-dark-gray {
+    color: var(--dark-gray);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-light-gray {
+    color: var(--light-gray);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-secondary {
+    color: var(--secondary);
+}
+
+.color-success {
+    color: var(--success);
+}
+
+.color-error {
+    color: var(--error);
+}
+
+.color-warning {
+    color: var(--warning);
+}
+
+.background-dark {
+    background-color: var(--dark);
+}
+
+.background-dark-gray {
+    background-color: var(--dark-gray);
+}
+
+.background-gray {
+    background-color: var(--gray);
+}
+
+.background-light-gray {
+    background-color: var(--light-gray);
+}
+
+.background-white {
+    background-color: var(--white);
+}
+
+.background-primary {
+    background-color: var(--primary);
+}
+
+.background-secondary {
+    background-color: var(--secondary);
+}
+
+.background-success {
+    background-color: var(--success);
+}
+
+.background-error {
+    background-color: var(--error);
+}
+
+.background-warning {
+    background-color: var(--warning);
+}

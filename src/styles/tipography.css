@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/tipography/Rubik/static/Rubik-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 105%;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 105%;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 105%;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+h5 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+}
+
+.font-paragraph-large {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+}
+
+.font-paragraph-medium {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.font-paragraph-small {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.font-button-large {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+
+.font-button-medium {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.font-button-small {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
