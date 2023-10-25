@@ -1,23 +1,34 @@
-import { useState } from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from "./Home";
-import NotFound from "./NotFound";
+import { React, useReducer } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import userReducer from '../components/userRedux';
+import { UserContext, UserDispatchContext } from '../components/userContext';
+import Home from './Home';
+import NotFound from './NotFound';
+import Login from './Login';
+import Cadastro from './Cadastro';
+import Historico from './Historico';
+import RecuperarSenha from './RecuperarSenha';
+import Quiz from './Quiz';
 
-
-export default function App(){
-    const [user, setUser] = useState(null)
-    const router = createBrowserRouter([
-        {
-          path: "/",
-          element: <Home />,
-          errorElement: <NotFound />
-        },
-    ]);
-
-    return (
-        <RouterProvider router={router} />
+function App(){
+    const [user, dispatch] = useReducer(userReducer, {logged: false})
+    return(
+        <UserContext.Provider value={user}>
+            <UserDispatchContext.Provider value={dispatch}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path='/' element={<Home />}/>
+                        <Route path='/login' element={<Login />} />
+                        <Route path='/cadastro' element={<Cadastro />} />
+                        <Route path='/historico' element={<Historico />} />
+                        <Route path='/recuperar-senha' element={<RecuperarSenha />} />
+                        <Route path='/quiz' element={<Quiz />} />
+                        <Route path='*' element={<NotFound />} />
+                    </Routes>
+                </BrowserRouter>
+            </UserDispatchContext.Provider>
+        </UserContext.Provider>
     )
 }
+
+export default App;
