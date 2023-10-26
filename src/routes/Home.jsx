@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import ProtectedRoute from './ProtectedRoute';
-import { UserContext, UserDispatchContext } from '../components/userContext';
-import { useOutletContext } from 'react-router-dom';
+import { UserContext, UserDispatchContext } from '../components/User/userContext';
 
 export default function Home(){
   const dispatch = useContext(UserDispatchContext)

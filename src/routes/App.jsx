@@ -1,10 +1,10 @@
 import { React, useReducer } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import userReducer from '../components/userRedux';
-import { UserContext, UserDispatchContext } from '../components/userContext';
+import userReducer from '../components/User/userRedux';
+import { UserContext, UserDispatchContext } from '../components/User/userContext';
 import Home from './Home';
 import NotFound from './NotFound';
-import Login from './Login';
+import Login from './Login/Login';
 import Cadastro from './Cadastro';
 import Historico from './Historico';
 import RecuperarSenha from './RecuperarSenha';

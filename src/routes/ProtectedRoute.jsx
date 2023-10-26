@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { UserContext } from '../components/userContext';
-import { Navigate, useOutletContext } from 'react-router-dom';
+import { UserContext } from '../components/User/userContext';
+import { Navigate } from 'react-router-dom';
 
 const ProtectedRoute = ({ children, redirectPath='/login' }) => {
     const user = useContext(UserContext)

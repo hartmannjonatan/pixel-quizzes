@@ -99,3 +99,11 @@ h5 {
     font-size: 14px;
     line-height: 16px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+}

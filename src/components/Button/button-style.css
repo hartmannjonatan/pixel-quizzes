@@ -1,0 +1,22 @@
+.btn{
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    padding: 12px 32px 12px 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: var(--btn-hover);
+}
+
+.btn:disabled{
+    cursor: inherit;
+    background-color: var(--gray);
+    color: var(--dark);
+}

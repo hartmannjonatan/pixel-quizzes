@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: space-around; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Aproveita a altura total da viewport */
+}
+
+.container img{
+    height: 88.5%;
+    width: 88.5%;
+}
+
+.logo{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
