@@ -8,9 +8,18 @@ const Input = ({type, placeholder, required, onChange, isValid, onChangeValidati
     const passwordType = showPassword ? 'text' : 'password'
 
     function handleBlur(value){
-        if(type=='email'){ // Para o sistema em questão só é necessário validar o email
-            var re_email = /\S+@\S+\.\S+/
-            onChangeValidation(name, re_email.test(value))
+        if(required && value.length==0){
+            onChangeValidation(name, false)
+        } else{
+            switch (type) {
+                case 'email':
+                    var re_email = /\S+@\S+\.\S+/
+                    onChangeValidation(name, re_email.test(value))
+                    break;
+                default:
+                    onChangeValidation(name, true)
+                    break;
+            }
         }
     }
 
