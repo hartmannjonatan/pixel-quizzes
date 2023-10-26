@@ -4,6 +4,7 @@ import { UserContext, UserDispatchContext } from '../components/User/userContext
 
 export default function Home(){
   const dispatch = useContext(UserDispatchContext)
+  const user = useContext(UserContext)
 
   function handleLogoutClick(){
     dispatch(

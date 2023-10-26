@@ -3,17 +3,13 @@ import Input from '../../components/Input/Input';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import { UserDispatchContext } from '../../components/User/userContext';
+import axios from 'axios';
 
 const FormLogin = () => {
     const dispatch = useContext(UserDispatchContext)
 
     function handleLoginClick(){
-      dispatch({
-        type: 'login',
-        user: {
-          logged: true
-        }
-      });
+      
     }
 
     const [data, setData] = useState({
@@ -43,7 +39,21 @@ const FormLogin = () => {
     }
 
     function handleFormSubmit(){
-        console.log('submit')
+        axios({
+            method: "get",
+            url: "https://my-json-server.typicode.com/higorpo/trilha-dev-json-server/profile"
+        }).then(function (response) {
+            dispatch({
+                type: 'login',
+                user: {
+                  logged: true,
+                  name: response.data.name,
+                  profile_image: response.data.profile_image,
+                  email: response.data.email,
+                  password_changed_date: response.data.password_changed_date
+                }
+            });
+        });
     }
 
     return (
