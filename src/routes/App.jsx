@@ -5,7 +5,7 @@ import { UserContext, UserDispatchContext } from '../components/User/userContext
 import Home from './Home';
 import NotFound from './NotFound';
 import Login from './Login/Login';
-import Cadastro from './Cadastro';
+import Cadastro from './Cadastro/Cadastro';
 import Historico from './Historico';
 import RecuperarSenha from './RecuperarSenha';
 import Quiz from './Quiz';

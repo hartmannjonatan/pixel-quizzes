@@ -8,10 +8,6 @@ import axios from 'axios';
 const FormLogin = () => {
     const dispatch = useContext(UserDispatchContext)
 
-    function handleLoginClick(){
-      
-    }
-
     const [data, setData] = useState({
         'email': '',
         'password': ''
@@ -57,7 +53,7 @@ const FormLogin = () => {
     }
 
     return (
-        <form method="post">
+        <form className='text-center' method="post">
             <Input type={'email'} name={'email'} required={true} placeholder={'E-mail'} value={data.email} validationMessage={'Este campo deve ser um email no formato: fulano@mail.com'} isValid={validation.email} onChangeValidation={handleInputValidationChange} onChange={(e) => {handleInputChange('email', e.target.value)}}/>
             <Input type={'password'} name={'password'} required={true} placeholder={'Password'} value={data.password} validationMessage={'Este campo é obrigatório!'} isValid={validation.password} onChangeValidation={handleInputValidationChange} onChange={(e) => {handleInputChange('password', e.target.value)}}/>
             <Link className='font-button-medium color-dark text-center link' to={'/recuperar-senha'} >Esqueceu a senha?</Link>
