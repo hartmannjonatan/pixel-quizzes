@@ -30,8 +30,20 @@ const FormRecuperarSenha = () => {
     }
 
     function handleFormSubmit(){
-        //Processamento de recuperação de senha
-        navigate('/')
+        if(Object.values(data).every((every) => every.length > 0)){
+            // Aqui teria o processamento do cadastro caso fosse necessário
+            navigate('/')
+        } else{
+            const valid = {
+                'email': true
+            }
+            Object.keys(data).forEach(input => {
+                if(data[input].length == 0){
+                    valid[input] = false
+                }
+            });
+            setValidation(valid)
+        }
     }
 
     return (

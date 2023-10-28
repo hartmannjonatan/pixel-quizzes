@@ -35,21 +35,34 @@ const FormLogin = () => {
     }
 
     function handleFormSubmit(){
-        axios({
-            method: "get",
-            url: "https://my-json-server.typicode.com/higorpo/trilha-dev-json-server/profile"
-        }).then(function (response) {
-            dispatch({
-                type: 'login',
-                user: {
-                  logged: true,
-                  name: response.data.name,
-                  profile_image: response.data.profile_image,
-                  email: response.data.email,
-                  password_changed_date: response.data.password_changed_date
+        if(Object.values(data).every((every) => every.length > 0)){
+            axios({
+                method: "get",
+                url: "https://my-json-server.typicode.com/higorpo/trilha-dev-json-server/profile"
+            }).then(function (response) {
+                dispatch({
+                    type: 'login',
+                    user: {
+                    logged: true,
+                    name: response.data.name,
+                    profile_image: response.data.profile_image,
+                    email: response.data.email,
+                    password_changed_date: response.data.password_changed_date
+                    }
+                });
+            });
+        } else{
+            const valid = {
+                'email': true,
+                'password': true
+            }
+            Object.keys(data).forEach(input => {
+                if(data[input].length == 0){
+                    valid[input] = false
                 }
             });
-        });
+            setValidation(valid)
+        }
     }
 
     return (

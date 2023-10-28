@@ -22,7 +22,6 @@ export default function Home(){
       method: "get",
       url: "https://my-json-server.typicode.com/higorpo/trilha-dev-json-server/quizzes"
     }).then(function (response) {
-        console.log(response.data)
         setQuizes(response.data)
         const data = new Set()
         response.data.forEach(element => {
