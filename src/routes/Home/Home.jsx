@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import MenuTemas from '../../components/MenuTemas/MenuTemas';
 import Input from '../../components/Input/Input'
 import axios from 'axios';
+import Card from '../../components/Card/Card';
 
 export default function Home(){
   const user = useContext(UserContext)
@@ -48,7 +49,7 @@ export default function Home(){
         </nav>
         <div className="content">
           {quizes.map(quiz => (
-            <h1>{quiz.title}</h1>
+            <Card className={"flex-item"} quiz={quiz}/>
           ))}
         </div>
       </ProtectedRoute>
