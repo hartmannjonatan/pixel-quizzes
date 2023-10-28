@@ -6,7 +6,7 @@ import Home from './Home/Home';
 import NotFound from './NotFound';
 import Login from './Login/Login';
 import Cadastro from './Cadastro/Cadastro';
-import Historico from './Historico';
+import Historico from './Historico/Historico';
 import RecuperarSenha from './RecuperarSenha/RecuperarSenha';
 import Quiz from './Quiz';
 

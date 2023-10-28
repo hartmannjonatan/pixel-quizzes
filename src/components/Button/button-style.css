@@ -20,3 +20,13 @@
     background-color: var(--gray);
     color: var(--dark);
 }
+
+.btn-back{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 100%;
+    background: none;
+    border: solid 1px var(--gray);
+    cursor: pointer;
+}

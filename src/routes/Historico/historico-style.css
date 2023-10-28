@@ -1,0 +1,8 @@
+.back-home {
+    display: flex;
+    align-items: center;
+}
+
+.back-home h2{
+    margin-left: 24px;
+}
