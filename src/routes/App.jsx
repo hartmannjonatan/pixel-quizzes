@@ -2,7 +2,7 @@ import { React, useReducer } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import userReducer from '../components/User/userRedux';
 import { UserContext, UserDispatchContext } from '../components/User/userContext';
-import Home from './Home';
+import Home from './Home/Home';
 import NotFound from './NotFound';
 import Login from './Login/Login';
 import Cadastro from './Cadastro/Cadastro';

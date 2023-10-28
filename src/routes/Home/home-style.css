@@ -1,0 +1,45 @@
+.hello h2{
+    margin: 0;
+}
+
+.hello p{
+    margin: 0;
+}
+
+nav{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: solid 1px var(--gray);
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 50%;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.inputSearch input{
+    width: 100%;
+}
+
+.inputSearch{
+    margin-bottom: 0 !important;
+    width: 60%;
+}
+
+.content{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
