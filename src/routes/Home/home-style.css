@@ -56,3 +56,16 @@ input[type="search"]::-webkit-search-cancel-button {
     width: calc(50% - 40px) !important;
     margin-bottom: 40px;
 }
+
+.not-found div{
+    display: flex;
+    justify-content: center;
+}
+
+.not-found div p{
+    word-wrap: break-word;
+    width: 340px;
+}
+.not-found img{
+    width: 70%;
+}
