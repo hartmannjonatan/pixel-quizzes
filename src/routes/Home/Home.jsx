@@ -72,7 +72,7 @@ export default function Home(){
             ))}
           </div>
         :
-          <div className="container">
+          <div className="container-fluid">
               <div className="not-found text-center">
                 <img src={icon_not_found} />
                 <h2 className="color-dark">Quiz não encontrado</h2>
