@@ -1,0 +1,50 @@
+.play{
+    max-width: 30%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.banner img{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+}
+
+.options{
+    padding-top: 2%;
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    justify-content: start;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 16px 24px;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    margin: 2% 0;
+    color: var(--dark);
+}
+
+.options .option .index-option{
+    margin-right: 5%;
+}
+
+.option-selected{
+    background-color: var(--light-gray) !important;
+}
+
+.option-correct{
+    border: 2px solid var(--success) !important;
+}
+
+.option-incorrect{
+    border: 2px solid var(--error) !important;
+}
+
+.option:disabled{
+    background-color: var(--gray);
+    cursor: inherit;
+}

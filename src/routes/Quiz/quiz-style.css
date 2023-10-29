@@ -15,10 +15,22 @@
     padding-bottom: 5%;
 }
 
+.view h2{
+    margin-top: 0 !important;
+}
+
 .description{
     word-wrap: break-word;
 }
 
 h5{
     margin: 2% 0 !important;
+}
+
+.not-line-nav{
+    border-bottom: none !important;
+}
+
+.feedback{
+    max-width: 30%;
 }
